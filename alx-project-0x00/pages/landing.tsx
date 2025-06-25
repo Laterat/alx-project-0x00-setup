@@ -9,7 +9,6 @@ const Landing: React.FC= ()=>{
             <Card/>
             <Card/>
             <Card/>
-            <Card/>
         </div>
     );
 }
