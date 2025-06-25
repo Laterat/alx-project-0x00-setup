@@ -22,7 +22,7 @@ const Card: React.FC = () => {
         </div>
         <div className="flex items-center">
           <Image src={STAR_IMAGE} alt="star" />
-          <p className=" font-medium text=[17px] ml-2">4.76</p>
+          <p className=" font-medium text-[17px] ml-2">4.76</p>
         </div>
       </div>
 

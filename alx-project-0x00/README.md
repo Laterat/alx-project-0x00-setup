@@ -1,26 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# alx-project-0x00
 
-## Getting Started
+A learning project scaffolded with **Next.js**, **TypeScript**, **Tailwind CSS**, and **ESLint**, built as part of the ALX Frontend Curriculum.  
+This README tracks progress and documentation for each task completed.
 
-First, run the development server:
+---
+
+## 📘 Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Setup & Installation](#setup--installation)
+3. [Tasks](#tasks)
+   - [✅ Task 0: Scaffolding a Project](#task-0-scaffolding-a-project)
+   - ⬜ Task 1: _(Next Task Title Here)_
+   - ⬜ Task 2: _(To be added)_
+4. [Resources](#resources)
+5. [Author](#author)
+
+---
+
+## 🧾 Project Overview
+
+This project is a hands-on practice in building modern frontend applications with **Next.js (Pages Router)**, integrating essential tools and libraries like Tailwind CSS, ESLint, and TypeScript.
+
+---
+
+## ⚙️ Setup & Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the project (once it's on GitHub)
+git clone https://github.com/your-username/alx-project-0x00.git
+cd alx-project-0x00
+
+# Install dependencies
+npm install
+
+# Start the development server on port 3000
+npm run dev -- -p 3000
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
