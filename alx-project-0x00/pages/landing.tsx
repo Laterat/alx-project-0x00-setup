@@ -15,9 +15,9 @@ const Landing: React.FC= ()=>{
           <div className="ml-4 flex flex-wrap gap-4">
             <Button title="Small - rounded-sm" styles="text-sm rounded-sm" />
             <Button title="Small - rounded-md" styles="text-sm rounded-md" />
-             <Button title="Small - rounded-full" styles="text-sm rounded-full" />
+             <Button title="Small - rounded-full" styles="text-sm rounded-lg" />
         </div>
-        
+
         <h2 className="text-xl font-semibold mb-3">Medium Buttons</h2>
         <div className="ml-4 flex flex-wrap gap-4">
           <Button title="Medium - rounded-sm" styles="text-base rounded-sm" />
