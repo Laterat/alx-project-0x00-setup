@@ -1,39 +1,111 @@
-# alx-project-0x00
+# ALX Project: 0x00 Next.js Frontend Setup
 
-A learning project scaffolded with **Next.js**, **TypeScript**, **Tailwind CSS**, and **ESLint**, built as part of the ALX Frontend Curriculum.  
-This README tracks progress and documentation for each task completed.
+This project demonstrates how to scaffold a Next.js app using TypeScript, Tailwind CSS, and ESLint. It includes basic routing, reusable components, prop typing, and modular design.
 
----
+## Project Setup
 
-## 📘 Table of Contents
+1. Created a new project using:
+   npx create-next-app@latest alx-project-0x00 --typescript
 
-1. [Project Overview](#project-overview)
-2. [Setup & Installation](#setup--installation)
-3. [Tasks](#tasks)
-   - [✅ Task 0: Scaffolding a Project](#task-0-scaffolding-a-project)
-   - ⬜ Task 1: _(Next Task Title Here)_
-   - ⬜ Task 2: _(To be added)_
-4. [Resources](#resources)
-5. [Author](#author)
+2. Selected:
 
----
+   - Yes: ESLint, Tailwind CSS, Import Alias
+   - No: App Router, /src directory
 
-## 🧾 Project Overview
-
-This project is a hands-on practice in building modern frontend applications with **Next.js (Pages Router)**, integrating essential tools and libraries like Tailwind CSS, ESLint, and TypeScript.
+3. Ran the app using:
+   npm run dev -- -p 3000
 
 ---
 
-## ⚙️ Setup & Installation
+## Task 1: Simple Routing
 
-```bash
-# Clone the project (once it's on GitHub)
-git clone https://github.com/your-username/alx-project-0x00.git
-cd alx-project-0x00
+- Created pages:
 
-# Install dependencies
-npm install
+  - pages/landing.tsx
+  - pages/about.tsx
 
-# Start the development server on port 3000
-npm run dev -- -p 3000
-```
+- Each file has a basic component with a heading.
+
+- Checked URLs:
+  - http://localhost:3000/landing
+  - http://localhost:3000/about
+
+---
+
+## Task 2: Card and Pill Components
+
+- Created Card.tsx in components folder
+- Card includes:
+
+  - Image
+  - Title
+  - Location
+  - Rating
+  - Features
+  - 3 Pill components used with titles like “Top Villa”, etc.
+
+- Created basic Pill.tsx component
+
+---
+
+## Task 3: Reusing Components
+
+- Imported and used the Card component inside pages/landing.tsx
+- Duplicated Card component multiple times
+- Confirmed cards render correctly on /landing route
+
+---
+
+## Task 4: Typing Pill Component
+
+- Added to interfaces/index.ts:
+  export interface PillProps {
+  title: string
+  }
+
+- In Pill.tsx:
+
+  - Imported PillProps
+  - Updated component to accept title as a prop and display it
+
+- VS Code no longer shows prop errors
+- Card renders correctly with dynamic pill titles
+
+---
+
+## Task 5: Button Component with Props
+
+- Added to interfaces/index.ts:
+  export interface ButtonProps {
+  title: string
+  styles: string
+  }
+
+- Created Button.tsx in components folder:
+  Accepts title and styles as props and renders a styled button
+
+- Used in landing.tsx:
+  <Button title="Small" styles="text-sm rounded-sm" />
+  <Button title="Medium" styles="text-base rounded-md" />
+  <Button title="Large" styles="text-lg rounded-full" />
+
+- Buttons render correctly on /landing route
+
+---
+
+## Files
+
+- interfaces/index.ts
+- components/Card.tsx
+- components/Pill.tsx
+- components/Button.tsx
+- pages/landing.tsx
+- pages/about.tsx
+- pages/index.tsx
+
+---
+
+## Repository
+
+GitHub repo: alx-project-0x00-setup  
+Local directory: alx-project-0x00
