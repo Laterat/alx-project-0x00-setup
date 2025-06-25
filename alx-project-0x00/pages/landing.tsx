@@ -9,7 +9,7 @@ const Landing: React.FC= ()=>{
             
             <Card />
             <Card />
-           
+             
         </div>
     );
 }
